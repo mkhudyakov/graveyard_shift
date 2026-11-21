@@ -111,13 +111,13 @@ body {
 
 		<script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":false,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":157321300,"index.wasm":37700666},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":false,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":157323460,"index.wasm":37700666},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
 // index.pck is shipped in parts (file size limits on the host); fetch them all and hand the engine one buffer
 const PCK_PARTS = ["index.pck.part0", "index.pck.part1", "index.pck.part2", "index.pck.part3"];
-const PCK_SIZE = 157321300;
+const PCK_SIZE = 157323460;
 function startSplit(override) {
 	const onProgress = override['onProgress'] || function () {};
 	let got = 0;
